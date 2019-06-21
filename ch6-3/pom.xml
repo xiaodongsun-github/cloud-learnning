@@ -16,6 +16,7 @@
         <module>ch6-3-provider-service</module>
         <module>ch6-3-hello-service</module>
         <module>ch6-3-hystrix-dashboard</module>
+        <module>ch6-3-turbine</module>
     </modules>
 
     <dependencies>

@@ -25,4 +25,9 @@ public class ProviderController {
         provider.add("hystrix dashboard");
         return provider;
     }
+
+    @GetMapping(value = "/getHelloService")
+    public String getHelloServiceData(){
+        return consumerService.getHelloServiceData();
+    }
 }

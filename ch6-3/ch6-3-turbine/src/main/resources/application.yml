@@ -1,0 +1,16 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://${eureka.host:127.0.0.1}:${eureka.port:8761}/eureka/
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+turbine:
+  app-config: sc-hello-service,sc-provider-service #设置需要收集监控信息的服务名
+  cluster-name-expression: "'default'" #设置集群名称
