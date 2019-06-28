@@ -11,7 +11,7 @@ import java.util.List;
  * @author xiaodongsun
  * @date 2019/06/20
  */
-@FeignClient(name = "sc-provider-service")
+@FeignClient(name = "sc-provider-service", fallback = ProviderServiceFallback.class)
 public interface ProviderService {
 
     @GetMapping("/getDashboard")
